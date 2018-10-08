@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <%= require('./partials/header.ejs')({ name: 'index' }) %>
+  <main>
+    <h1>我是 main</h1>
+    <img src="<%= require('../images/MicroProgramLogo.jpg') %>" alt="">
+    <a href="main.html">去 main.html</a>
+  </main>
+  <%= require('./partials/footer.ejs')() %>
+</body>
+</html>
